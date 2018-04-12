@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+      <script src="js/feather.js"></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-default sticky-top">
+        <div class="container">
+          
+            <a class="navbar-brand" href="#">4bears</a>
+            <div class="form-group mx-sm-3 mb-2">
+              <input type="text" class="form-control" id="inputPassword2" placeholder="Search">
+            </div>
+            
+            <div class="navbar-header pull-right">
+               <div class="dropdown show">
+                
+                <span class="n98J d-xl-none"><i data-feather="bell"></i> </span>
+                    <span class="n98J" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="message-circle"></i> </span>
+                    <div class="dropdown-menu">
+                            <ul class="list-group ">
+                                    <li class="list-group-item ssgm">
+                                            <a href="#">
+                                                    <div class="pull-left user-block">
+                                                      <img src="images/josh.jpeg" class="img-circle" alt="User Image">
+                                                    </div>
+                                                    <h4>
+                                                      Support Team
+                                                      <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                    </h4>
+                                                    <p>Why not buy a new awesome theme?</p>
+                                                  </a>
+                                    </li>
+                                    <li class="list-group-item ssgm">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item ssgm">Morbi leo risus</li>
+                                    <li class="list-group-item ssgm">Porta ac consectetur ac</li>
+                                    <li class="list-group-item ssgm">Vestibulum at eros</li>
+                                  </ul>
+                          </div>
+                <span class="n98J"><i data-feather="user"></i> </span>
+              </div>
+            </div>
+
+        </div>
+      </nav>
+
+      <div class="container">
+          <div class="row justify-content-center" style="margin-top:4rem">
+              <div class="col-md-6">
+                    <h3><i data-feather="edit"></i> Pet Registration</h3>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="text-muted ">#00012973</span>
+                        </div>
+                      <div class="card-body">
+                            <form>
+                                    <div class="form-row">
+                                      <div class="form-group col-md-4">
+                                        <label for="inputEmail4">Microchip #</label>
+                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Microchip #">
+                                      </div>
+                                    </div>
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Your Pet Name</label>
+                                        <input type="text" class="form-control" id="inputPassword4" placeholder="Pet Name">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                            <label for="inputPassword4">Date of Birth</label>
+                                            <input type="date" class="form-control" id="inputPassword4" >
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                                <label for="inputState">Gender</label>
+                                                <select id="inputState" class="form-control">
+                                                  <option selected>Choose...</option>
+                                                  <option>Male</option>
+                                                  <option>Female</option>
+                                                </select>
+                                              </div>
+                                    </div>
+                                    <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                              <label for="inputPassword4">Breeder's Name</label>
+                                              <input type="text" class="form-control" id="inputPassword4" placeholder="Breeder's Name">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                    <label for="inputState">Breed</label>
+                                                    <select id="inputState" class="form-control">
+                                                      <option selected>Choose...</option>
+                                                      <option>Askal</option>
+                                                      <option>Canine</option>
+                                                    </select>
+                                                  </div>
+                                            <div class="form-group col-md-6">
+                                              <label for="inputPassword4">Father Name</label>
+                                              <input type="text" class="form-control" id="inputPassword4" placeholder="Father Name">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                              <label for="inputPassword4">Mother Name</label>
+                                              <input type="text" class="form-control" id="inputPassword4" placeholder="Mother Name">
+                                            </div>
+                                          </div>
+                                    <button type="submit" class="btn b-btn-primary">Register My Pet</button>
+                                          
+                                  </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/feather.js"></script>
+      <script >
+            feather.replace()
+
+            $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+        </script>
+          
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>

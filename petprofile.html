@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+      <script src="js/feather.js"></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-default sticky-top">
+        <div class="container">
+          
+            <a class="navbar-brand" href="#">4bears</a>
+            <div class="form-group mx-sm-3 mb-2">
+              <input type="text" class="form-control" id="inputPassword2" placeholder="Search">
+            </div>
+            
+            <div class="navbar-header pull-right">
+               <div class="dropdown show">
+                
+                <span class="n98J d-xl-none"><i data-feather="bell"></i> </span>
+                    <span class="n98J" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="message-circle"></i> </span>
+                    <div class="dropdown-menu">
+                            <ul class="list-group ">
+                                    <li class="list-group-item ssgm">
+                                            <a href="#">
+                                                    <div class="pull-left user-block">
+                                                      <img src="images/josh.jpeg" class="img-circle" alt="User Image">
+                                                    </div>
+                                                    <h4>
+                                                      Support Team
+                                                      <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                    </h4>
+                                                    <p>Why not buy a new awesome theme?</p>
+                                                  </a>
+                                    </li>
+                                    <li class="list-group-item ssgm">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item ssgm">Morbi leo risus</li>
+                                    <li class="list-group-item ssgm">Porta ac consectetur ac</li>
+                                    <li class="list-group-item ssgm">Vestibulum at eros</li>
+                                  </ul>
+                          </div>
+                <span class="n98J"><i data-feather="user"></i> </span>
+              </div>
+            </div>
+
+        </div>
+      </nav>
+<div class="container">
+        <div class="row justify-content-center" style="margin-top:4rem">
+            <div class="col-md-6" style="margin-bottom:3.1rem;">
+                
+                    <div class="OLIUda text-center">
+                            <a href=""><img src="images/a8.jpg" class="profile" alt="YTsJQEP" style="
+                                border: 3px solid #f6f9fc;
+                                box-shadow: none;
+                            "></a>
+                            <button class="btn btn-default edit" data-toggle="modal" data-target="#edit"><i data-feather="edit-3" ></i> </button>
+                            <h3>VINCENT FERRER </h3>
+                            <h6>Microchip #: 09123081</h6>
+                            <h6 class="text-muted">@askal</h6>
+                            <p class="faJgN">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                           
+                    </div>
+                    <!--edit pet profile-->
+                    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Edit profile</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i data-feather="x"></i>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                        <form>
+                                                <div class="form-row">
+                                                  <div class="form-group col-md-4">
+                                                    <label for="inputEmail4">Microchip #</label>
+                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Microchip #">
+                                                  </div>
+                                                </div>
+                                                <div class="form-row">
+                                                  <div class="form-group col-md-6">
+                                                    <label for="inputPassword4">Your Pet Name</label>
+                                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Pet Name">
+                                                  </div>
+                                                  <div class="form-group col-md-6">
+                                                        <label for="inputPassword4">Date of Birth</label>
+                                                        <input type="date" class="form-control" id="inputPassword4" >
+                                                      </div>
+                                                      <div class="form-group col-md-6">
+                                                            <label for="inputState">Gender</label>
+                                                            <select id="inputState" class="form-control">
+                                                              <option selected>Choose...</option>
+                                                              <option>Male</option>
+                                                              <option>Female</option>
+                                                            </select>
+                                                          </div>
+                                                </div>
+                                                <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                          <label for="inputPassword4">Breeder's Name</label>
+                                                          <input type="text" class="form-control" id="inputPassword4" placeholder="Breeder's Name">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                                <label for="inputState">Breed</label>
+                                                                <select id="inputState" class="form-control">
+                                                                  <option selected>Choose...</option>
+                                                                  <option>Askal</option>
+                                                                  <option>Canine</option>
+                                                                </select>
+                                                              </div>
+                                                        <div class="form-group col-md-6">
+                                                          <label for="inputPassword4">Father Name</label>
+                                                          <input type="text" class="form-control" id="inputPassword4" placeholder="Father Name">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                          <label for="inputPassword4">Mother Name</label>
+                                                          <input type="text" class="form-control" id="inputPassword4" placeholder="Mother Name">
+                                                        </div>
+                                                      </div>
+                                                      
+                                              </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn b-btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn b-btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                    <div class="Um-mKDl  text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                    <h6>Pet Breeder</h6>
+                                    <a href=""data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Moli"><img src="images/c2.jpg" alt="Preview"></a>
+                            </div>
+                            <div class="col-md-6">
+                                    <h6>Pet Parents</h6>
+                                    <a href="profile.html" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Alexis"><img src="images/josh.jpeg" alt="YTsJQEP"></a>
+                                    <a href="" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Jonaz"><img src="images/preview.jpg" alt="Preview"></a>
+                                    <a href=""data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Thrisia"><img src="images/c1.jpg" alt="Vince"></a>
+                                    <a href=""data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Moli"><img src="images/c2.jpg" alt="Preview"></a>
+
+                                    <h6>Pet Child</h6>
+                                    <a href="profile.html" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Alexis"><img src="images/josh.jpeg" alt="YTsJQEP"></a>
+                                    <a href="" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Jonaz"><img src="images/preview.jpg" alt="Preview"></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="document text-center" style="margin-top:1rem;">
+                    <span>File</span>
+                        <div class="form-check-inline">
+                            <input class="form-check-input radio" type="radio" name="privacy" id="private" value="Private" checked="">
+                              <label class="form-check-label" for="private">
+                                  Private
+                              </label>
+                            </div>
+
+                            <div class="form-check-inline">
+                                <input class="form-check-input radio" type="radio" name="privacy" id="public" value="Public">
+                                  <label class="form-check-label" for="public">
+                                      Public
+                                  </label>
+                                </div>
+                                <di class="row justify-content-center">
+                                    <div class="col-md-10">
+                                    <button class="btn btn-default sYndsa" data-toggle="modal" data-target="#fileupload"><i data-feather="plus"></i></button>
+
+                                    <div class="modal fade" id="fileupload" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-sm" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel"><span>Upload File</span></h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <form class="container" id="form1" enctype="multipart/form-data" method="post" action="Upload.aspx">
+                                                            <div class="row setup-content" id="step-1">
+                                                                    <div class="col-md-12 well ">
+                                                              <label for="fileToUpload">Select a File to Upload</label><br />
+                                               
+                                                                                        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();"/>
+                                                             
+                                                            <h5 class="fna" id="fileName"></h5>
+                                                            <h5 class="fna" id="fileSize"></h5>
+                                                                        <button class="btn b-btn-primary" onclick="uploadFile()">Upload</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                          </form>
+                                                </div>
+                                             
+                                              </div>
+                                            </div>
+                                          </div>
+
+                        <div class="files text-center">
+                                                    <div class="asxn ">
+                                                        <a href="">
+                                                                <span><i class="fas fa-file-pdf fa-3x"></i></span>
+                                                            <p>doss.pdf</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="asxn ">
+                                                            <a href="">
+                                                                    <span><i class="fas fa-file-pdf fa-3x"></i></span>
+                                                                <p>doss.pdf</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="asxn ">
+                                                                <a href="">
+                                                                        <span><i class="fas fa-file-pdf fa-3x"></i></span>
+                                                                    <p>doss.pdf</p>
+                                                                </a>
+                                                            </div>
+                                                    <div class="asxn">
+                                                        <a href="">
+                                                                <span><i class="fas fa-file-word fa-3x"></i></span>
+                                                            <p>doss.pdf</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="asxn">
+                                                        <a href="">
+                                                                <span><i class="fas fa-file-powerpoint fa-3x"></i></span>
+                                                            <p>doss.ppt</p>
+                                                        </a>
+                                                    </div>
+                                        </div>
+                                    </div>
+                                </di>
+                                <div class="ascJDmas">
+                                      
+                                </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+                            <div class="row">
+                                    <div class="col-md-4">
+                                       <div class="card hover-card">
+                                           <img class="card-img-top" src="images/a5.jpg" alt="Card image cap">
+                                           <div class="card-body top text-center">
+                                               <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                               <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                               <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                               <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                               <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                                           </div>
+                                           <div class="card-footer">
+                                               <div class="user-block">
+                                                   <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                   <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                   <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                 </div>
+                                           </div>
+                                   </div>
+                                  </div> 
+                                  <div class="col-md-4">
+                                     <div class="card hover-card">
+                                         <img class="card-img-top" src="images/ss7.jpg" alt="Card image cap">
+                                         <div class="card-body top text-center">
+                                             <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                             <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                             <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                             <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                             <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                                         </div>
+                                         <div class="card-footer">
+                                             <div class="user-block">
+                                                 <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                 <span class="description">Shared publicly - 7:30 PM Today</span>
+                                               </div>
+                                         </div>
+                                 </div>
+                                </div> 
+                                 <div class="col-md-4">
+                                     <div class="card hover-card">
+                                         <img class="card-img-top" src="images/a4.jpg" alt="Card image cap">
+                                         <div class="card-body top text-center">
+                                             <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                             <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                             <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                             <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                             <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                                         </div>
+                                         <div class="card-footer">
+                                             <div class="user-block">
+                                                 <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                 <span class="description">Shared publicly - 7:30 PM Today</span>
+                                               </div>
+                                         </div>
+                                 </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                     <div class="card hover-card">
+                                         <img class="card-img-top" src="images/a1.jpg" alt="Card image cap">
+                                         <div class="card-body top text-center">
+                                             <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                             <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                             <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                             <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                             <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                                         </div>
+                                         <div class="card-footer">
+                                             <div class="user-block">
+                                                 <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                 <span class="description">Shared publicly - 7:30 PM Today</span>
+                                               </div>
+                                         </div>
+                                 </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                     <div class="card hover-card">
+                                         <img class="card-img-top" src="images/c4.jpg" alt="Card image cap">
+                                         <div class="card-body top text-center">
+                                             <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                             <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                             <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                             <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                             <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                                         </div>
+                                         <div class="card-footer">
+                                             <div class="user-block">
+                                                 <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                 <span class="description">Shared publicly - 7:30 PM Today</span>
+                                               </div>
+                                         </div>
+                                 </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                     <div class="card hover-card">
+                                         <img class="card-img-top" src="images/ss9.jpg" alt="Card image cap">
+                                         <div class="card-body top text-center">
+                                             <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                             <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                             <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                             <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                             <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                                         </div>
+                                         <div class="card-footer">
+                                             <div class="user-block">
+                                                 <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                 <span class="description">Shared publicly - 7:30 PM Today</span>
+                                               </div>
+                                         </div>
+                                 </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                     <div class="card hover-card">
+                                         <img class="card-img-top" src="images/a8.jpg" alt="Card image cap">
+                                         <div class="card-body top text-center">
+                                             <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                             <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                             <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                             <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                             <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                                         </div>
+                                         <div class="card-footer">
+                                             <div class="user-block">
+                                                 <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                 <span class="description">Shared publicly - 7:30 PM Today</span>
+                                               </div>
+                                         </div>
+                                 </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                     <div class="card hover-card">
+                                         <img class="card-img-top" src="images/ss4.jpg" alt="Card image cap">
+                                         <div class="card-body top text-center">
+                                             <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                             <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                             <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                             <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                             <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                                         </div>
+                                         <div class="card-footer">
+                                             <div class="user-block">
+                                                 <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                 <span class="description">Shared publicly - 7:30 PM Today</span>
+                                               </div>
+                                         </div>
+                                 </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                     <div class="card hover-card">
+                                         <img class="card-img-top" src="images/ss3.jpg" alt="Card image cap">
+                                         <div class="card-body top text-center">
+                                             <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                             <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                             <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                             <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                             <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                                         </div>
+                                         <div class="card-footer">
+                                             <div class="user-block">
+                                                 <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                 <span class="description">Shared publicly - 7:30 PM Today</span>
+                                               </div>
+                                         </div>
+                                 </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                     <div class="card hover-card">
+                                         <img class="card-img-top" src="images/ss1.jpg" alt="Card image cap">
+                                         <div class="card-body top text-center">
+                                             <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                             <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                             <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                             <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                             <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                                         </div>
+                                         <div class="card-footer">
+                                             <div class="user-block">
+                                                 <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                 <span class="description">Shared publicly - 7:30 PM Today</span>
+                                               </div>
+                                         </div>
+                                 </div>
+                                 </div>
+                               </div>
+                    </div>
+
+
+
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/feather.js"></script>
+      <script src="js/fileinput.js"></script>
+      <script src="js/fileinput.min.js"></script>
+      <script src="js/uploadfile.js"></script>
+      <script >
+  $(function () {
+    $('#myTab li:last-child a').tab('show')
+  })          
+            feather.replace()
+
+            $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+        </script>
+          
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>
