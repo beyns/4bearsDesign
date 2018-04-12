@@ -5,287 +5,925 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-      <script src="js/feather.js"></script>
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css" />
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-default sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-default">
         <div class="container">
-          
-            <a class="navbar-brand" href="#">4bears</a>
-            <div class="form-group mx-sm-3 mb-2">
-              <input type="text" class="form-control" id="inputPassword2" placeholder="Search">
-            </div>
-            
-            <div class="navbar-header pull-right">
-               <div class="dropdown show">
+                <a class="navbar-brand" href="#">4bears</a>
+                <div class="dropdown">
+                    <button class="btn btn-default b-nav" data-toggle="dropdown"><i data-feather="home"></i>    
+                    <button class="btn btn-default b-nav" data-toggle="dropdown"><i data-feather="bell"></i>    
+                    <button class="btn btn-default b-nav" data-toggle="dropdown"><i data-feather="message-circle"></i> </button>
+                    <div class="dropdown-menu ">
+                            <div class="card-header">
+                                <span>Messages</span>
+                            </div>
+                                <ul class="list-group nss-body">
+                                        <li class="list-group-item active ssgm"  data-toggle="modal" data-target="#exampleModal">
+                                                <div class="user-block">
+                                                        <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                        <h6 class="description">Hello world</h6>
+                                                        <small class="description"> 7:30 PM Today</small>
+                                                      </div>
+                                        </li>
+                                        
+                                        <li class="list-group-item active ssgm">
+                                                    <div class="user-block">
+                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                            <h6 class="description">Hello world</h6>
+                                                            <small class="description"> 7:30 PM Today</small>
+                                                          </div>
+                                        </li>
+                                        <li class="list-group-item active ssgm">
+                                                <div class="user-block">
+                                                        <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                        <h6 class="description">Hello world</h6>
+                                                        <small class="description"> 7:30 PM Today</small>
+                                                      </div>
+                                        </li>
+                                        <li class="list-group-item ssgm">
+                                                <div class="user-block">
+                                                        <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                        <h6 class="description">Hello world</h6>
+                                                        <small class="description"> 7:30 PM Today</small>
+                                                      </div>
+                                        </li>
+                                        <li class="list-group-item ssgm">
+                                                <div class="user-block">
+                                                        <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                        <h6 class="description">Hello world</h6>
+                                                        <small class="description"> 7:30 PM Today</small>
+                                                      </div>
+                                        </li>
+                                        
+                                      </ul>
+                                      <div class="card-footer e-Isma text-center">
+                                          <a href=""><span>See More Conversation</span></a>
+                                      </div>
+                              </div>
+                </div>
                 
-                <span class="n98J d-xl-none"><i data-feather="bell"></i> </span>
-                    <span class="n98J" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="message-circle"></i> </span>
-                    <div class="dropdown-menu">
-                            <ul class="list-group ">
-                                    <li class="list-group-item ssgm">
-                                            <a href="#">
-                                                    <div class="pull-left user-block">
-                                                      <img src="images/josh.jpeg" class="img-circle" alt="User Image">
-                                                    </div>
-                                                    <h4>
-                                                      Support Team
-                                                      <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                                    </h4>
-                                                    <p>Why not buy a new awesome theme?</p>
-                                                  </a>
-                                    </li>
-                                    <li class="list-group-item ssgm">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item ssgm">Morbi leo risus</li>
-                                    <li class="list-group-item ssgm">Porta ac consectetur ac</li>
-                                    <li class="list-group-item ssgm">Vestibulum at eros</li>
-                                  </ul>
-                          </div>
-                <span class="n98J"><i data-feather="user"></i> </span>
-              </div>
-            </div>
 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+      
+
+                                </li>
+                              </ul>
+ 
+                              <div class="form-group mx-sm-3 mb-2 text-center">
+                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Search">
+                                  </div>
+                                <div class="ml-auto dropdown">
+                                        <button class="btn btn-default b-nav ml-auto"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i data-feather="user"></i>
+                                              </button>
+                                                <div class="dropdown-menu dsJu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#"><span><i data-feather="log-out"></i> Logout</span></a>
+                    
+                                                      </div>
+                                </div>
+                 
+                </div>
         </div>
       </nav>
 <div class="container">
-        <div class="row justify-content-center" style="margin-top:4rem">
-            <div class="col-md-6" style="margin-bottom:3.1rem;">
+        <div class="row justify-content-center" style="margin-top:10rem">
+            <div class="col-md-3">
                     <div class="OLIUda text-center">
-                            <a href=""><img src="images/vince.jpg" class="profile" alt="YTsJQEP"></a>
-                            <h3>VINCENT FERRER</h3>
-                            <h6 class="text-muted">@username</h6>
-                            <span class="text-muted" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="1200 pts"><i data-feather="award"></i> awards</span>
-                            <span class="text-muted" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="12k followers"><i data-feather="user"></i> 13 followers </span>
-                            <span class="text-muted"data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="120 favorites"><i data-feather="heart"></i> 103 favorites</span>
-                            <p class="faJgN">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            <a href="index.html"> <i data-feather="facebook"></i></a>
-                            <a href="index.html"><i data-feather="instagram"></i></a>
-                            <a href="index.html"> <i data-feather="twitter"></i></a>
+                            <div class="avatar-upload">
+                                    <div class="avatar-edit">
+                                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                        <label for="imageUpload"></label>
+                                    </div>
+                                    <div class="avatar-preview">
+                                        <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                                        </div>
+                                    </div>
+                                </div>
                     </div>
+            </div>
+            <div class="col-md-7 OLIUda text-center">
+                 
+              
+                   <a href="settings.html"> <span class="float-right text-muted"><i data-feather="settings"></i></span></a>
+                    <h3>VINCENT FERRER</h3>
+                    <h6 class="text-muted">@username</h6>
+                    <span class="text-muted" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="1200 pts"><i data-feather="award"></i> awards</span>
+                    <span class="text-muted" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="12k followers"><i data-feather="user"></i> 13 followers </span>
+                    <span class="text-muted"data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="120 favorites"><i data-feather="user-plus"></i> 103 following</span>
+                    <p class="faJgN">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a href="index.html"> <button class="btn b-btn-primary social" ><i data-feather="facebook"></i></button></a>
+                    <a href="index.html"> <button class="btn b-btn-primary social" ><i data-feather="instagram"></i></button></a>
+                    <a href="index.html"> <button class="btn b-btn-primary social" ><i data-feather="twitter"></i></button></a>
                     <div class="followers  text-center">
                       
-                        <button class="btn btn-default sYndsa" data-toggle="modal" data-target="#exampleModal"><i data-feather="plus"></i></button>
-                        <a href="profile.html" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Alexis"><img src="images/josh.jpeg" alt="YTsJQEP"></a>
-                        <a href="" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Jonaz"><img src="images/preview.jpg" alt="Preview"></a>
-                        <a href=""data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Thrisia"><img src="images/c1.jpg" alt="Vince"></a>
-                        <a href=""data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Moli"><img src="images/c2.jpg" alt="Preview"></a>
-
-                        <button class="btn btn-default sYndsa" data-toggle="modal" data-target="#exampleModal"><i data-feather="more-horizontal"></i></button>
-                </div>
-                <div class="text-center">
-                        <button class="btn btn-default b-nav plus"><i data-feather="plus"></i> <h6>Follow</h6></button>
-                        <button class="btn b-btn-danger"><i data-feather="message-circle"></i> message</button>
-                </div>
-                
+                            <a href="register.html"><button class="btn btn-default sYndsa" ><i data-feather="plus"></i></button></a>
+                            <a href="profile.html" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Alexis"><img src="images/josh.jpeg" alt="YTsJQEP"></a>
+                            <a href="" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Jonaz"><img src="images/preview.jpg" alt="Preview"></a>
+                            <a href=""data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Thrisia"><img src="images/c1.jpg" alt="Vince"></a>
+                            <a href=""data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Moli"><img src="images/c2.jpg" alt="Preview"></a>
+    
+                            <button class="btn btn-default sYndsa" data-toggle="modal" data-target="#more"><i data-feather="more-horizontal"></i></button>
+                    </div>
+                                    <!--modal add pet-->
+                <div class="modal fade" id="more" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm" role="document">
+                          <div class="modal-content ">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Pet Registration</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i data-feather="x"></i>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="aUns4r">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href=""><img src="images/josh.jpeg" alt="YTsJQEP"></a>
+                                            <span class="aJndk">Joshua Perez</span>
+                                            <button type="button" class="btn btn-default navbar-btn float-right"> Visit</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href=""><img src="images/preview.jpg" alt="Preview"></a>
+                                            <span class="aJndk">Lea Mae</span>
+                                            <button type="button" class="btn btn-default navbar-btn float-right"> Visit</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href=""><img src="images/c1.jpg" alt="Vince"></a>
+                                            <span class="aJndk">Jandrell Crico</span>
+                                            <button type="button" class="btn btn-default navbar-btn float-right"> Visit</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href=""><img src="images/c2.jpg" alt="Preview"></a>
+                                            <span class="aJndk">Vincent Ferrer</span>
+                                            <button type="button" class="btn btn-default navbar-btn float-right"> Visit</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href=""><img src="images/c3.jpg" alt="Received_1633699050026508"></a>
+                                            <span class="aJndk">Carlo Jape</span>
+                                            <button type="button" class="btn btn-default navbar-btn float-right"> Visit</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href=""><img src="images/c3.jpg" alt="Received_1633699050026508"></a>
+                                            <span class="aJndk">Carlo Jape</span>
+                                            <button type="button" class="btn btn-default navbar-btn float-right"> Visit</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href=""><img src="images/c3.jpg" alt="Received_1633699050026508"></a>
+                                            <span class="aJndk">Carlo Jape</span>
+                                            <button type="button" class="btn btn-default navbar-btn float-right"> Visit</button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-default b-fol" data-toggle="dropdown">FOLLOW</button>
+                      <button class="btn btn-default b-mes" data-toggle="dropdown">MESSAGE</button>
             </div>
         </div>
     </div>
-    
-    <div class="container">
-            <div class="row">
-                 
-                 <div class="col-md-4">
-                    <div class="card hover-card">
-                        <img class="card-img-top" src="images/a5.jpg" alt="Card image cap">
-                        <div class="card-body top text-center">
-                            <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
-                            <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
-                            <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
-                            <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
-                            <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
-                        </div>
-                        <div class="card-footer">
-                            <div class="user-block">
-                                <img class="img-circle" src="images/vince.jpg" alt="User Image">
-                                <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                                <span class="description">Shared publicly - 7:30 PM Today</span>
-                              </div>
-                        </div>
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist" style="margin-top: 3rem;">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#post" role="tab" aria-controls="pills-home" aria-selected="true">Post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#favorite" role="tab" aria-controls="pills-profile" aria-selected="false">Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#following" role="tab" aria-controls="pills-contact" aria-selected="false">Following</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#followers" role="tab" aria-controls="pills-contact" aria-selected="false">Followers</a>
+          </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="post" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container">
+                <div class="ard">
+                    <div class="ard-body">
+                            <div class="gallery" id="galley">
+                                    <div class="container">
+                                            <div class="row">
+                                                  <div class="col-md-4">
+                                                      <div class="card xCgld">
+                                                            <div class="card-header" >
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                          </div>
+                                                            </div>
+                                                            <img class="card-img img-fluid" src="images/ss3.jpg" alt="Card image" style="border-radius: 0px;">
+                                                            <div class="card-footer">
+                                                                 <div class="LIolj">
+                                                                    <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i>2k </span>
+                                                                    <span class="lkSY"> <a href="#comment"><i data-feather="message-circle"class="icn" ></i></a>1k </span>
+                                                                    <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 100k</span>
+                                                                    <span class="lkSY float-right"> <i data-feather="download"class="icn"></i> 1k</span>
+                                                                </div>
+                                                            </div>
+                                                      </div>
+                                                 </div>
+                                                 <div class="col-md-4">
+                                                        <div class="card xCgld">
+                                                              <div class="card-header" >
+                                                                      <div class="user-block">
+                                                                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            </div>
+                                                              </div>
+                                                              <img class="card-img img-fluid" src="images/ss9.jpg" alt="Card image" style="border-radius: 0px;">
+                                                              <div class="card-footer">
+                                                                   <div class="LIolj">
+                                                                      <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i>2k </span>
+                                                                      <span class="lkSY"> <a href="#comment"><i data-feather="message-circle"class="icn" ></i></a>1k </span>
+                                                                      <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 100k</span>
+                                                                      <span class="lkSY float-right"> <i data-feather="download"class="icn"></i> 1k</span>
+                                                                  </div>
+                                                              </div>
+                                                        </div>
+                                                   </div>
+                                                   <div class="col-md-4">
+                                                        <div class="card xCgld">
+                                                              <div class="card-header" >
+                                                                      <div class="user-block">
+                                                                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            </div>
+                                                              </div>
+                                                              <img class="card-img img-fluid" src="images/ss1.jpg" alt="Card image" style="border-radius: 0px;">
+                                                              <div class="card-footer">
+                                                                   <div class="LIolj">
+                                                                      <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i>2k </span>
+                                                                      <span class="lkSY"> <a href="#comment"><i data-feather="message-circle"class="icn" ></i></a>1k </span>
+                                                                      <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 100k</span>
+                                                                      <span class="lkSY float-right"> <i data-feather="download"class="icn"></i> 1k</span>
+                                                                  </div>
+                                                              </div>
+                                                        </div>
+                                                   </div>
+                                                 <div class="col-md-4">
+                                                        <div class="card text-white border-0 box-shadow-0">
+                                                                <div class="card-content">
+                                                                  <img class="card-img img-fluid" src="images/ss3.jpg" alt="Card image">
+                                                                  <div class="card-img-overlay overlay-blue-grey">
+                                                                    <h4 class="card-title">Inverse Text</h4>
+                                                                    <p class="card-text">Sugar plum tiramisu sweet. Cake jelly marshmallow cotton candy
+                                                                      chupa chups carrot cake topping chupa chups.</p>
+                                                                    <p class="card-text">
+                                                                      <small class="text-muted">Last updated 3 mins ago</small>
+                                                                    </p>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                 </div> 
+                                                 <div class="col-md-4">
+                                                        <div class="card text-white border-0 box-shadow-0">
+                                                                <div class="card-content">
+                                                                  <img class="card-img img-fluid" src="images/a5.jpg" alt="Card image">
+                                                                  <div class="card-img-overlay overlay-blue-grey">
+                                                                        <div class="user-block">
+                                                                                <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                                <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                                <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                                              </div>
+                                                                    
+                                                                    <p class="card-text">
+                                                                            <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                                                    </p>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                               </div> 
+                                               <div class="col-md-4">
+                                                    <div class="card text-white border-0 box-shadow-0">
+                                                            <div class="card-content">
+                                                              <img class="card-img img-fluid" src="images/a9.jpg" alt="Card image">
+                                                              <div class="card-img-overlay overlay-blue-grey">
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                                          </div>
+                                                                
+                                                                <p class="card-text">
+                                                                        <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                             </div> 
+                                              <div class="col-md-4">
+                                                    <div class="card text-white border-0 box-shadow-0">
+                                                            <div class="card-content">
+                                                              <img class="card-img img-fluid" src="images/a7.jpg" alt="Card image">
+                                                              <div class="card-img-overlay overlay-blue-grey">
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                                          </div>
+                                                                
+                                                                <p class="card-text">
+                                                                        <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                    <div class="card text-white border-0 box-shadow-0">
+                                                            <div class="card-content">
+                                                              <img class="card-img img-fluid" src="images/a2.jpg" alt="Card image">
+                                                              <div class="card-img-overlay overlay-blue-grey">
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                                          </div>
+                                                                
+                                                                <p class="card-text">
+                                                                        <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                    <div class="card text-white border-0 box-shadow-0">
+                                                            <div class="card-content">
+                                                              <img class="card-img img-fluid" src="images/a4.jpg" alt="Card image">
+                                                              <div class="card-img-overlay overlay-blue-grey">
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                                          </div>
+                                                                
+                                                                <p class="card-text">
+                                                                        <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                    <div class="card text-white border-0 box-shadow-0">
+                                                            <div class="card-content">
+                                                              <img class="card-img img-fluid" src="images/ss9.jpg" alt="Card image">
+                                                              <div class="card-img-overlay overlay-blue-grey">
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                                          </div>
+                                                                
+                                                                <p class="card-text">
+                                                                        <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                    <div class="card text-white border-0 box-shadow-0">
+                                                            <div class="card-content">
+                                                              <img class="card-img img-fluid" src="images/ss2.jpg" alt="Card image">
+                                                              <div class="card-img-overlay overlay-blue-grey">
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                                          </div>
+                                                                
+                                                                <p class="card-text">
+                                                                        <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                    <div class="card text-white border-0 box-shadow-0">
+                                                            <div class="card-content">
+                                                              <img class="card-img img-fluid" src="images/ss4.jpg" alt="Card image">
+                                                              <div class="card-img-overlay overlay-blue-grey">
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                                          </div>
+                                                                
+                                                                <p class="card-text">
+                                                                        <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                    <div class="card text-white border-0 box-shadow-0">
+                                                            <div class="card-content">
+                                                              <img class="card-img img-fluid" src="images/a3.jpg" alt="Card image">
+                                                              <div class="card-img-overlay overlay-blue-grey">
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                                          </div>
+                                                                
+                                                                <p class="card-text">
+                                                                        <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                    <div class="card text-white border-0 box-shadow-0">
+                                                            <div class="card-content">
+                                                              <img class="card-img img-fluid" src="images/ss1.jpg" alt="Card image">
+                                                              <div class="card-img-overlay overlay-blue-grey">
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                                                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                                                            <span class="description">Shared publicly - 7:30 PM Today</span>
+                                                                          </div>
+                                                                
+                                                                <p class="card-text">
+                                                                        <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                            </div>
+                    </div>
                 </div>
-               </div> 
-               <div class="col-md-4">
-                  <div class="card hover-card">
-                      <img class="card-img-top" src="images/ss7.jpg" alt="Card image cap">
-                      <div class="card-body top text-center">
-                          <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
-                          <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
-                          <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
-                          <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
-                          <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
-                      </div>
-                      <div class="card-footer">
-                          <div class="user-block">
-                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
-                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                              <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                      </div>
-              </div>
-             </div> 
-              <div class="col-md-4">
-                  <div class="card hover-card">
-                      <img class="card-img-top" src="images/a4.jpg" alt="Card image cap">
-                      <div class="card-body top text-center">
-                          <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
-                          <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
-                          <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
-                          <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
-                          <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
-                      </div>
-                      <div class="card-footer">
-                          <div class="user-block">
-                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
-                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                              <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                      </div>
-              </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="card hover-card">
-                      <img class="card-img-top" src="images/a1.jpg" alt="Card image cap">
-                      <div class="card-body top text-center">
-                          <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
-                          <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
-                          <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
-                          <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
-                          <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
-                      </div>
-                      <div class="card-footer">
-                          <div class="user-block">
-                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
-                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                              <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                      </div>
-              </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="card hover-card">
-                      <img class="card-img-top" src="images/c4.jpg" alt="Card image cap">
-                      <div class="card-body top text-center">
-                          <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
-                          <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
-                          <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
-                          <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
-                          <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
-                      </div>
-                      <div class="card-footer">
-                          <div class="user-block">
-                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
-                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                              <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                      </div>
-              </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="card hover-card">
-                      <img class="card-img-top" src="images/ss9.jpg" alt="Card image cap">
-                      <div class="card-body top text-center">
-                          <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
-                          <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
-                          <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
-                          <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
-                          <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
-                      </div>
-                      <div class="card-footer">
-                          <div class="user-block">
-                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
-                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                              <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                      </div>
-              </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="card hover-card">
-                      <img class="card-img-top" src="images/a8.jpg" alt="Card image cap">
-                      <div class="card-body top text-center">
-                          <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
-                          <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
-                          <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
-                          <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
-                          <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
-                      </div>
-                      <div class="card-footer">
-                          <div class="user-block">
-                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
-                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                              <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                      </div>
-              </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="card hover-card">
-                      <img class="card-img-top" src="images/ss4.jpg" alt="Card image cap">
-                      <div class="card-body top text-center">
-                          <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
-                          <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
-                          <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
-                          <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
-                          <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
-                      </div>
-                      <div class="card-footer">
-                          <div class="user-block">
-                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
-                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                              <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                      </div>
-              </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="card hover-card">
-                      <img class="card-img-top" src="images/ss3.jpg" alt="Card image cap">
-                      <div class="card-body top text-center">
-                          <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
-                          <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
-                          <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
-                          <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
-                          <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
-                      </div>
-                      <div class="card-footer">
-                          <div class="user-block">
-                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
-                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                              <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                      </div>
-              </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="card hover-card">
-                      <img class="card-img-top" src="images/ss1.jpg" alt="Card image cap">
-                      <div class="card-body top text-center">
-                          <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
-                          <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
-                          <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
-                          <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
-                          <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
-                      </div>
-                      <div class="card-footer">
-                          <div class="user-block">
-                              <img class="img-circle" src="images/vince.jpg" alt="User Image">
-                              <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                              <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                      </div>
-              </div>
-              </div>
             </div>
           </div>
+        <!--end-->
+
+        <div class="tab-pane fade" id="favorite" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card hover-card">
+                            <img class="card-img-top" src="images/c4.jpg" alt="Card image cap">
+                            <div class="card-body top text-center">
+                                <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                            </div>
+                            <div class="card-footer">
+                                <div class="user-block">
+                                    <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                    <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                    <span class="description">Shared publicly - 7:30 PM Today</span>
+                                  </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card hover-card">
+                            <img class="card-img-top" src="images/c1.jpg" alt="Card image cap">
+                            <div class="card-body top text-center">
+                                <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                            </div>
+                            <div class="card-footer">
+                                <div class="user-block">
+                                    <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                    <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                    <span class="description">Shared publicly - 7:30 PM Today</span>
+                                  </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card hover-card">
+                            <img class="card-img-top" src="images/ss9.jpg" alt="Card image cap">
+                            <div class="card-body top text-center">
+                                <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                            </div>
+                            <div class="card-footer">
+                                <div class="user-block">
+                                    <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                    <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                    <span class="description">Shared publicly - 7:30 PM Today</span>
+                                  </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card hover-card">
+                            <img class="card-img-top" src="images/a8.jpg" alt="Card image cap">
+                            <div class="card-body top text-center">
+                                <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                            </div>
+                            <div class="card-footer">
+                                <div class="user-block">
+                                    <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                    <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                    <span class="description">Shared publicly - 7:30 PM Today</span>
+                                  </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card hover-card">
+                            <img class="card-img-top" src="images/ss4.jpg" alt="Card image cap">
+                            <div class="card-body top text-center">
+                                <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                            </div>
+                            <div class="card-footer">
+                                <div class="user-block">
+                                    <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                    <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                    <span class="description">Shared publicly - 7:30 PM Today</span>
+                                  </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card hover-card">
+                            <img class="card-img-top" src="images/ss3.jpg" alt="Card image cap">
+                            <div class="card-body top text-center">
+                                <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                            </div>
+                            <div class="card-footer">
+                                <div class="user-block">
+                                    <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                    <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                    <span class="description">Shared publicly - 7:30 PM Today</span>
+                                  </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card hover-card">
+                            <img class="card-img-top" src="images/ss1.jpg" alt="Card image cap">
+                            <div class="card-body top text-center">
+                                <p class="dexsc ">"I took this photo this morning. What do you guys think?"</p>
+                                <span class="lkSY">  <i data-feather="heart" class="icn" onClick="favorite(this);"></i> 11 </span>
+                                <span class="lkSY"> <i data-feather="message-circle"class="icn" ></i> 12 </span>
+                                <span class="lkSY"> <i data-feather="share-2"class="icn"></i> 3</span>
+                                <span class="lkSY"><i data-feather="download"class="icn"></i> 1.k</span>
+                            </div>
+                            <div class="card-footer">
+                                <div class="user-block">
+                                    <img class="img-circle" src="images/vince.jpg" alt="User Image">
+                                    <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                    <span class="description">Shared publicly - 7:30 PM Today</span>
+                                  </div>
+                            </div>
+                    </div>
+                    </div>
+
+
+
+                </div>
+              </div>
+        </div>
+        <div class="tab-pane fade" id="following" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card ">
+                            <div class="card-body">
+                                  <div class="row">
+                                      <div class="col-md-4">
+                                            <div class="user-block">
+                                                    <img class="img-circle" src="images/vince.jpg" alt="User Image" style="width: 80px;height: 80px;">
+                                            </div>
+                                      </div>
+                                      <div class="col-md-8">
+                                            <div class="user-block">
+                                                    <a href=""><h5>Vincent Ferrer</h5></a>
+                                            <span class="description">@vince</span>
+                                            <div style="margin-left: 35px;">
+                                      </div>
+                                      </div>
+                                            <p class="dexsc " style="margin-top:.7rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </div>
+                                  </div>
+                            </div>
+                            <div class="card-footer KmsQa text-muted text-center">
+                                <span><i data-feather="award"></i> 12k</span> |
+                                <span><i data-feather="users"></i>  2k</span> |
+                                <span><i data-feather="user-plus"></i> 1.1k </span>
+                            </div>
+          
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-body">
+                                      <div class="row">
+                                          <div class="col-md-4">
+                                                <div class="user-block">
+                                                        <img class="img-circle" src="images/vince.jpg" alt="User Image" style="
+                                                        width: 80px;
+                                                        height: 80px;
+                                                    ">
+                                                      </div>
+                                          </div>
+                                          <div class="col-md-8">
+                                                <div class="user-block">
+                                                        <a href=""><h5>Vincent Ferrer</h5></a>
+                                                <span class="description">@vince</span>
+                                                <div style="margin-left: 35px;">
+                                          </div>
+                                                      </div>
+                                                <p class="dexsc " style="margin-top:.7rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                            </div>
+                                      </div>
+                                </div>
+                                <div class="card-footer KmsQa text-muted text-center">
+                                    <span><i data-feather="award"></i> 12k</span> |
+                                    <span><i data-feather="users"></i>  2k</span> |
+                                    <span><i data-feather="user-plus"></i> 1.1k </span>
+                                </div>
+              
+                        </div>
+                        </div>
+                        <div class="col-md-4">
+                                <div class="card ">
+                                    <div class="card-body">
+                                          <div class="row">
+                                              <div class="col-md-4">
+                                                    <div class="user-block">
+                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image" style="
+                                                            width: 80px;
+                                                            height: 80px;
+                                                        ">
+                                                          </div>
+                                              </div>
+                                              <div class="col-md-8">
+                                                    <div class="user-block">
+                                                            <a href=""><h5>Vincent Ferrer</h5></a>
+                                                    <span class="description">@vince</span>
+                                                    <div style="margin-left: 35px;">
+                                              </div>
+                                                          </div>
+                                                    <p class="dexsc " style="margin-top:.7rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="card-footer KmsQa text-muted text-center">
+                                        <span><i data-feather="award"></i> 12k</span> |
+                                        <span><i data-feather="users"></i>  2k</span> |
+                                        <span><i data-feather="user-plus"></i> 1.1k </span>
+                                    </div>
+                  
+                            </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="followers" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-4">
+                                <div class="card ">
+                                    <div class="card-body">
+                                          <div class="row">
+                                              <div class="col-md-4">
+                                                    <div class="user-block">
+                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image" style="width: 80px;height: 80px;">
+                                                    </div>
+                                              </div>
+                                              <div class="col-md-8">
+                                                    <div class="user-block">
+                                                     <a href=""><h5>Vincent Ferrer</h5></a>
+                                                    <span class="description">@vince</span>
+                                                    <div style="margin-left: 35px;">
+                                              </div>
+                                              </div>
+                                                    <p class="dexsc " style="margin-top:.7rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="card-footer KmsQa text-muted text-center">
+                                        <span><i data-feather="award"></i> 12k</span> |
+                                        <span><i data-feather="users"></i>  2k</span> |
+                                        <span><i data-feather="user-plus"></i> 1.1k </span>
+                                    </div>
+                  
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                                    <div class="card ">
+                                        <div class="card-body">
+                                              <div class="row">
+                                                  <div class="col-md-4">
+                                                        <div class="user-block">
+                                                                <img class="img-circle" src="images/vince.jpg" alt="User Image" style="width: 80px;height: 80px;">
+                                                        </div>
+                                                  </div>
+                                                  <div class="col-md-8">
+                                                        <div class="user-block">
+                                                                <a href=""><h5>Vincent Ferrer</h5></a>
+                                                        <span class="description">@vince</span>
+                                                        <div style="margin-left: 35px;">
+                                                  </div>
+                                                  </div>
+                                                        <p class="dexsc " style="margin-top:.7rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                                    </div>
+                                              </div>
+                                        </div>
+                                        <div class="card-footer KmsQa text-muted text-center">
+                                            <span><i data-feather="award"></i> 12k</span> |
+                                            <span><i data-feather="users"></i>  2k</span> |
+                                            <span><i data-feather="user-plus"></i> 1.1k </span>
+                                        </div>
+                      
+                                </div>
+                                </div>
+                                <div class="col-md-4">
+                                        <div class="card ">
+                                            <div class="card-body">
+                                                  <div class="row">
+                                                      <div class="col-md-4">
+                                                            <div class="user-block">
+                                                                    <img class="img-circle" src="images/vince.jpg" alt="User Image" style="width: 80px;height: 80px;">
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-md-8">
+                                                            <div class="user-block">
+                                                                    <a href=""><h5>Vincent Ferrer</h5></a>
+                                                            <span class="description">@vince</span>
+                                                            <div style="margin-left: 35px;">
+                                                      </div>
+                                                      </div>
+                                                            <p class="dexsc " style="margin-top:.7rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                                        </div>
+                                                  </div>
+                                            </div>
+                                            <div class="card-footer KmsQa text-muted text-center">
+                                                <span><i data-feather="award"></i> 12k</span> |
+                                                <span><i data-feather="users"></i>  2k</span> |
+                                                <span><i data-feather="user-plus"></i> 1.1k </span>
+                                            </div>
+                          
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                      <div class="row">
+                                                          <div class="col-md-4">
+                                                                <div class="user-block">
+                                                                        <img class="img-circle" src="images/vince.jpg" alt="User Image" style="width: 80px;height: 80px;">
+                                                                </div>
+                                                          </div>
+                                                          <div class="col-md-8">
+                                                                <div class="user-block">
+                                                                 <h5>Vincent Ferrer</h5>
+                                                                <span class="description">@vince</span>
+                                                                <div style="margin-left: 35px;">
+                                                          </div>
+                                                          </div>
+                                                                <p class="dexsc " style="margin-top:.7rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div class="card-footer KmsQa text-muted text-center">
+                                                    <span><i data-feather="award"></i> 12k</span> |
+                                                    <span><i data-feather="users"></i>  2k</span> |
+                                                    <span><i data-feather="user-plus"></i> 1.1k </span>
+                                                </div>
+                              
+                                        </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                                <div class="card ">
+                                                    <div class="card-body">
+                                                          <div class="row">
+                                                              <div class="col-md-4">
+                                                                    <div class="user-block">
+                                                                            <img class="img-circle" src="images/vince.jpg" alt="User Image" style="width: 80px;height: 80px;">
+                                                                    </div>
+                                                              </div>
+                                                              <div class="col-md-8">
+                                                                    <div class="user-block">
+                                                                     <h5>Vincent Ferrer</h5>
+                                                                    <span class="description">@vince</span>
+                                                                    <div style="margin-left: 35px;">
+                                                              </div>
+                                                              </div>
+                                                                    <p class="dexsc " style="margin-top:.7rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                                                </div>
+                                                          </div>
+                                                    </div>
+                                                    <div class="card-footer KmsQa text-muted text-center">
+                                                        <span><i data-feather="award"></i> 12k</span> |
+                                                        <span><i data-feather="users"></i>  2k</span> |
+                                                        <span><i data-feather="user-plus"></i> 1.1k </span>
+                                                    </div>
+                                  
+                                            </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <div class="card ">
+                                                        <div class="card-body">
+                                                              <div class="row">
+                                                                  <div class="col-md-4">
+                                                                        <div class="user-block">
+                                                                                <img class="img-circle" src="images/vince.jpg" alt="User Image" style="width: 80px;height: 80px;">
+                                                                        </div>
+                                                                  </div>
+                                                                  <div class="col-md-8">
+                                                                        <div class="user-block">
+                                                                         <h5>Vincent Ferrer</h5>
+                                                                        <span class="description">@vince</span>
+                                                                        <div style="margin-left: 35px;">
+                                                                  </div>
+                                                                  </div>
+                                                                        <p class="dexsc " style="margin-top:.7rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                                                    </div>
+                                                              </div>
+                                                        </div>
+                                                        <div class="card-footer KmsQa text-muted text-center">
+                                                            <span><i data-feather="award"></i> 12k</span> |
+                                                            <span><i data-feather="users"></i>  2k</span> |
+                                                            <span><i data-feather="user-plus"></i> 1.1k </span>
+                                                        </div>
+                                      
+                                                </div>
+                                                </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
 
 
 
       <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/feather.js"></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+      <script src="js/custom.min.js"></script>
+      <script src="js/custom.js"></script>
+
       <script src="js/popper.min.js"></script>
       <script src="js/feather.js"></script>
       <script >
+              
+              function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#imageUpload").change(function() {
+    readURL(this);
+});
             feather.replace()
 
             $(function () {
